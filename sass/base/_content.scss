@@ -1,16 +1,4 @@
-body{
-    margin: 0;
-    padding: 0;
-   font-family: $fontroboto;
 
-    h1{
-        font-family: 'Shrikhand', cursive;
-        text-align: center;
-        letter-spacing: 1px;
-
-}
-
-}
 
 form{
     flex-direction: row;
@@ -20,9 +8,6 @@ form{
     align-content: stretch;
     display: flex;
     height: 5vh;
-   
-    
-    
    
     input[type=text]{
         border: none;
@@ -58,4 +43,21 @@ form{
     margin: 10px 0;
     
 
+}
+
+header{
+    background-color:$lightergrey;
+    height: 31vh;
+    .title{
+        margin-top: 0;
+        padding-top: 30px;
+    }
+    #subtitle{
+        color: $lighterblack;
+        text-align: center;
+        font-size: 1.25rem;
+        
+    }
+   
+    
 }

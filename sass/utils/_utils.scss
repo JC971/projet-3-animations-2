@@ -1,7 +1,7 @@
 $primaire: #9356DC;
 $secondaire: #FF79DA;
 $grey: #e2e2e2;
-$lightergrey: lighten($grey,20);
+$lightergrey: lighten($grey,5);
 $shadow: (4px -7px 15px 2px #CFCFCF);
 $darkengrey: darken($grey,10);
 $black:#000;
@@ -17,4 +17,22 @@ $fontshrikhand:'Shrikhand', cursive;
     justify-content: center;
     align-items: center;
     align-content: stretch;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+   font-family: $fontroboto;
+
+}
+
+
+h1, h2 , h3{
+    font-family: $fontshrikhand;
+}
+
+h1{
+    font-family: 'Shrikhand', cursive;
+    text-align: center;
+    letter-spacing: 1px;
 }
