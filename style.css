@@ -1,6 +1,7 @@
 body {
   margin: 0;
   padding: 0;
+  font-family: "Roboto", sans-serif;
 }
 body h1 {
   font-family: "Shrikhand", cursive;
@@ -22,8 +23,31 @@ form input[type=text] {
   font-weight: 500;
   font-size: 16px;
   padding: 0 0 0 10px;
-  background-color: rgba(225, 230, 238, 0.5254901961);
+  background-color: #e2e2e2;
 }
+form label[for=name] {
+  font-weight: 800;
+}
+form input[id=name] {
+  color: #595959;
+  font-weight: 700;
+  font-size: 1.08rem;
+  width: 150px;
+}
+
 .form {
-  background-color: rgba(225, 230, 238, 0.5254901961);
+  background-color: #e2e2e2;
+  border-top: solid 4px #c9c9c9;
+}
+
+.logo {
+  font-family: "Shrikhand", cursive;
+  font-size: 2rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: stretch;
+  margin: 10px 0;
 }/*# sourceMappingURL=style.css.map */

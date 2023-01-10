@@ -1,7 +1,20 @@
 $primaire: #9356DC;
 $secondaire: #FF79DA;
-$grey: #e1e6ee86;
+$grey: #e2e2e2;
 $lightergrey: lighten($grey,20);
+$shadow: (4px -7px 15px 2px #CFCFCF);
+$darkengrey: darken($grey,10);
+$black:#000;
+$lighterblack:lighten($black,35);
+$fontroboto:'Roboto', sans-serif;
+$fontshrikhand:'Shrikhand', cursive;
 
 
-
+@mixin flex-center{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: stretch;
+}
