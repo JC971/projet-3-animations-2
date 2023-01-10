@@ -1,10 +1,5 @@
-body{
-    background-color: red;
-}
+@import './sass/utils/utils';
+@import './sass/base/content';
 
-h1{
-    color: blue;
-}
 
-$primaire: #9356DC;
-$secondaire: #FF79DA;
+
