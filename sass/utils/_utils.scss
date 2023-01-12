@@ -19,6 +19,21 @@ $fontshrikhand:'Shrikhand', cursive;
     align-content: stretch;
 }
 
+@mixin number{
+    position: absolute;
+    left: -15px;
+    background-color: $primaire;
+    border-radius: 50%;
+    padding: 8px;
+    color: #fff;
+}
+
+@mixin icon-button{
+    padding: 0 20px 0 0px;
+    color: $lighterblack;
+    font-size: 1.2rem;
+}
+
 body{
     margin: 0;
     padding: 0;

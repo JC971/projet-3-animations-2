@@ -85,25 +85,65 @@ header{
 
 }
 
-.container{
-	display: flex;
-	flex-direction: column;
-	flex-wrap: nowrap;
-	justify-content: center;
-	align-items: flex-start;
-	align-content: stretch;
-    
 
-}
 
-    .container-titre{
-       margin-top: 90px;
-       padding-left: 20px;
+    .button-titre{
+        margin-top: 30px;
         display: flex;
-        flex-direction: row;
-	flex-wrap: nowrap;
-	justify-content: flex-start;
-	align-items: flex-start;
-	align-content: flex-start;
+        padding-left: 20px;
+ 
     }
 
+    .button{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        margin-right: auto;
+        margin-left: auto;
+        height: 70px;
+        border-radius: 20px;
+        font-size: 1rem;
+        font-weight: 600;
+        margin-bottom: 20px;
+        border: none;
+    }
+
+    .button1{
+        position: relative;
+        background-color: $lightergrey;
+        box-shadow: $shadow;
+    }
+    .one{
+       @include number;
+      
+    }
+
+    .fa-solid.fa-mobile-screen-button{
+       @include icon-button;
+    }
+
+    .fa-solid.fa-list-ul{
+        @include icon-button;
+    }
+    .fa-solid.fa-store{
+        @include icon-button;
+        color: $primaire;
+    }
+
+    
+
+.two{
+    @include number;
+    left: 25px;
+}
+
+.three{
+    @include number;
+    left: 25px
+}
+    
+    
+    
