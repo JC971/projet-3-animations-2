@@ -7,7 +7,7 @@ form{
     align-items: center;
     align-content: stretch;
     display: flex;
-    height: 5vh;
+    height: 47px;
    
     input[type=text]{
         border: none;
@@ -47,11 +47,14 @@ form{
 
 header{
     background-color:$lightergrey;
-    height: 31vh;
+
+    padding: 0 0 60px 0;
+    
+    
 
     .title{
-        margin-top: 0;
-        padding-top: 20px;
+        margin-top: 0px;
+        padding-top: 30px;
         font-size: 1.7rem;
         font-family: 'Shrikhand', cursive;
         text-align: center;
@@ -62,13 +65,13 @@ header{
         color: $lighterblack;
         text-align: center;
         font-size: 1.25rem;
-        margin-bottom: 30px;
+        margin-bottom: 20px;
     }
 
 }
 
 .bouton-explorer{
-    width: 230px;
+    width: 235px;
     height: 50px;
     display: block;
     margin-right: auto;
@@ -79,8 +82,28 @@ header{
     border-radius: 20px;
     border: none;
     background: linear-gradient(to bottom, $primaire, $secondaire);
-  
-    
+
 }
 
+.container{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: flex-start;
+	align-content: stretch;
+    
+
+}
+
+    .container-titre{
+       margin-top: 90px;
+       padding-left: 20px;
+        display: flex;
+        flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: flex-start;
+	align-content: flex-start;
+    }
 
