@@ -111,15 +111,7 @@ header{
         border: none;
     }
 
-    .button1{
-        position: relative;
-        background-color: $lightergrey;
-        box-shadow: $shadow;
-    }
-    .one{
-       @include number;
-      
-    }
+  
 
     .fa-solid.fa-mobile-screen-button{
        @include icon-button;
@@ -137,13 +129,20 @@ header{
 
 .two{
     @include number;
-    left: 25px;
+   
+   
 }
 
 .three{
     @include number;
-    left: 25px
+    
 }
+.button1, .button2, .button3{
+    position: relative;
+}
+.one{
+    @include number;
+ }
     
     
     
