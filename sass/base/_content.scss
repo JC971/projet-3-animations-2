@@ -150,6 +150,7 @@ header{
         padding-left: 20px;
         background-color: $lightergrey;
     }
+
     .restaurants-cards{
         
             display: flex;
@@ -158,30 +159,32 @@ header{
             justify-content: flex-start;
             align-items: flex-start;
             align-content: space-evenly;
-    }
-
-    .restaurants-cards img{
-        width: 350px;
-        height: 200px;
-        border-radius: 20px;
-        
-        
-    }
-
-    .restaurants-title{
-        margin-top: 50px;
-
-    }
-    
-.label{
-            font-weight: 700;
-            font-size: 1.2rem;
-            padding: 10px 0 0 10px;
-
-            &-descriptif{
-                color: $lighterblack;
-                font-weight: 400;
-                
+            .label{
+                padding: 20px 0 20px 20px;
+                border-radius: 0 0 20px 20px;
+                background-color:#fff;
+                width: 330px;
+                margin-bottom: 20px;
+                &-titre{
+                    font-weight: 700;
+                    font-size: 1.2rem;
+                    line-height: 30px;
+                    &descriptif{
+                        color: $lighterblack;
+                        
+                        
+                    }
+                }
             }
             
-        }
+
+    }
+
+.restaurants-cards img{
+    
+    width: 350px;
+    height: 160px;
+    object-fit: cover;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
