@@ -199,9 +199,17 @@ header #subtitle {
 
 .restaurants-cards img {
   width: 350px;
-  height: 160px;
+  height: 180px;
   -o-object-fit: cover;
      object-fit: cover;
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
+}
+
+.fa-regular.fa-heart {
+  float: right;
+  padding: 0 20px;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #595959;
 }/*# sourceMappingURL=style.css.map */
