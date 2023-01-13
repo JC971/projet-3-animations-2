@@ -187,6 +187,7 @@ header #subtitle {
   background-color: #fff;
   width: 330px;
   margin-bottom: 20px;
+  position: relative;
 }
 .restaurants-cards .label-titre {
   font-weight: 700;
@@ -206,8 +207,19 @@ header #subtitle {
   border-top-left-radius: 20px;
 }
 
+/*
+.fa-regular.fa-heart{
+    float: right;
+    padding: 0 20px ;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: $lighterblack;
+}*/
 .fa-regular.fa-heart {
-  float: right;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
   padding: 0 20px;
   font-size: 1.5rem;
   font-weight: 400;

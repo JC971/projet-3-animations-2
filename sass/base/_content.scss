@@ -162,6 +162,7 @@ header{
                 background-color:#fff;
                 width: 330px;
                 margin-bottom: 20px;
+                position: relative;
                 &-titre{
                     font-weight: 700;
                     font-size: 1.2rem;
@@ -185,10 +186,25 @@ header{
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
 }
+/*
 .fa-regular.fa-heart{
     float: right;
     padding: 0 20px ;
     font-size: 1.5rem;
     font-weight: 400;
     color: $lighterblack;
+}*/
+
+.fa-regular.fa-heart{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    padding: 0 20px ;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: $lighterblack;
+   
 }
+
+
