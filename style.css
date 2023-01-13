@@ -232,6 +232,16 @@ header #subtitle {
   color: #595959;
 }
 
+.nouveaute {
+  position: relative;
+}
+
+.my-button {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
 footer {
   background-color: #595959;
 }
