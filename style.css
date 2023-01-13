@@ -3,6 +3,9 @@ body {
   padding: 0;
   font-family: "Roboto", sans-serif;
   box-sizing: border-box;
+  overflow-x: hiden;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 h1, h2, h3 {
@@ -170,8 +173,10 @@ header #subtitle {
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
-  padding-left: 20px;
   background-color: #efefef;
+}
+.restaurants-title {
+  padding-left: 20px;
 }
 
 .restaurants-cards {

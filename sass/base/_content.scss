@@ -144,9 +144,13 @@ header{
         flex-direction: column;
         flex-wrap: wrap;
         justify-content: center;
-        padding-left: 20px;
         background-color: $lightergrey;
+        &-title{
+            padding-left:20px
+        }
+       
     }
+    
 
     .restaurants-cards{
         
