@@ -138,10 +138,6 @@ header #subtitle {
   font-weight: 700;
 }
 
-.relative {
-  position: relative;
-}
-
 .fa-solid.fa-mobile-screen-button {
   padding: 0 20px 0 0px;
   color: #595959;
@@ -203,6 +199,11 @@ header #subtitle {
     flex-wrap: wrap;
   }
 }
+@media (min-width: 1200px) {
+  .restaurants {
+    padding: 0 20px;
+  }
+}
 
 .restaurants-cards .label {
   border-radius: 0 0 20px 20px;
@@ -222,6 +223,11 @@ header #subtitle {
     margin-bottom: 40px;
   }
 }
+@media (min-width: 1200px) {
+  .restaurants-cards .label {
+    width: 450px;
+  }
+}
 .restaurants-cards .label-titre {
   font-weight: 700;
   font-size: 1.2rem;
@@ -232,16 +238,16 @@ header #subtitle {
 }
 
 .restaurants-cards img {
-  width: 350px;
+  width: 100%;
   height: 180px;
   -o-object-fit: cover;
      object-fit: cover;
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
 }
-@media (min-width: 600px) {
+@media (min-width: 1200px) {
   .restaurants-cards img {
-    width: 400px;
+    height: 210px;
   }
 }
 
@@ -270,6 +276,7 @@ footer {
 footer .footer-title {
   color: #fff;
   font-weight: normal;
+  margin-top: 0;
 }
 footer .fa-solid.fa-utensils {
   color: #fff;

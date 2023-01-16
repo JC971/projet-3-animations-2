@@ -117,7 +117,6 @@ header{
         width: 70%;
     }
     
-    
 
     }
 
@@ -136,9 +135,7 @@ header{
     }
     
         
-    .relative{
-        position: relative;
-    }
+   
  
 
 .fa-solid.fa-mobile-screen-button{
@@ -165,9 +162,6 @@ header{
         justify-content: flex-start;
         align-items: stretch;
         align-content: stretch;
-      
-      
-
     }
 /*---------------------------*/
 .restaurants{
@@ -193,6 +187,10 @@ header{
         align-content: stretch;
         flex-wrap: wrap;
     }
+        @media (min-width:$xlScreen){
+            padding:  0 20px;
+            
+        }
        
     }
 
@@ -213,6 +211,9 @@ header{
                 @media (min-width:$largeScreen){
                    
                 }
+                @media (min-width:$xlScreen){
+                    width: 450px;
+                }
         &-titre{
             font-weight: 700;
             font-size: 1.2rem;
@@ -228,16 +229,14 @@ header{
 }
 
 .restaurants-cards img{
-    width: 350px;
+    width: 100%;
     height: 180px;
     object-fit: cover;
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
-    @media (min-width:$smallScreen){
-        width: 400px;
+    @media (min-width:$xlScreen){
+       height: 210px;
     }
-     
-    
 }
 /*
 .fa-regular.fa-heart{
@@ -267,6 +266,7 @@ footer{
     .footer-title{
         color: #fff;
         font-weight: normal;
+        margin-top: 0;
     }
         .fa-solid.fa-utensils{
             color: #fff;
@@ -307,7 +307,6 @@ footer{
 
     
 }
-
 
 
 .footer-li{
