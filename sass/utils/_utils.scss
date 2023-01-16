@@ -1,5 +1,7 @@
 $primaire: #9356DC;
 $secondaire: #FF79DA;
+$tertiaire:#99E2D0;
+$tertiaire-darker:darken($tertiaire,30);
 $grey: #e2e2e2;
 $lightergrey: lighten($grey,5);
 $shadow: (4px -7px 15px 2px #CFCFCF);
@@ -8,6 +10,14 @@ $black:#000;
 $lighterblack:lighten($black,35);
 $fontroboto:'Roboto', sans-serif;
 $fontshrikhand:'Shrikhand', cursive;
+
+$smallScreen: 600px;
+$mediumScreen: 768px;
+$largeScreen: 992px;
+$xlScreen: 1200px;
+$xxlScreen: 1440px;
+
+@media(min-width: $smallScreen){}
 
 
 @mixin flex-center{

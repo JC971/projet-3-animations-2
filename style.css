@@ -90,19 +90,25 @@ header #subtitle {
 }
 
 .button-titre {
-  margin-top: 40px;
-  margin-bottom: 40px;
-  display: flex;
+  margin-bottom: 20px;
   padding-left: 20px;
+  margin-top: 50px;
+}
+
+.medaillon {
+  top: 20px;
+  left: -10px;
+  background-color: #9356DC;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  vertical-align: middle;
+  line-height: 30px;
+  position: absolute;
 }
 
 .button {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  width: 90%;
+  position: relative;
   margin-right: auto;
   margin-left: auto;
   height: 70px;
@@ -112,6 +118,28 @@ header #subtitle {
   margin-bottom: 20px;
   margin-top: 20px;
   border: none;
+  width: 90%;
+}
+@media (min-width: 600px) {
+  .button {
+    width: 70%;
+  }
+}
+
+.new {
+  position: absolute;
+  margin-top: 15px;
+  height: 25px;
+  width: 80px;
+  background-color: #99E2D0;
+  border: none;
+  border-radius: 2px;
+  color: #32b091;
+  font-weight: 700;
+}
+
+.relative {
+  position: relative;
 }
 
 .fa-solid.fa-mobile-screen-button {
@@ -133,67 +161,66 @@ header #subtitle {
   color: #9356DC;
 }
 
+.fa-solid.fa-arrow-left {
+  color: #595959;
+}
+
 .fonctionnement {
-  height: 330px;
+  border: 2px solid 0;
+  margin-bottom: 25px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: stretch;
 }
 
-.two {
-  position: absolute;
-  left: -10px;
-  background-color: #9356DC;
-  border-radius: 50%;
-  padding: 8px;
-  color: #fff;
-}
-
-.three {
-  position: absolute;
-  left: -10px;
-  background-color: #9356DC;
-  border-radius: 50%;
-  padding: 8px;
-  color: #fff;
-}
-
-.button1, .button2, .button3 {
-  position: relative;
-}
-
-.one {
-  position: absolute;
-  left: -10px;
-  background-color: #9356DC;
-  border-radius: 50%;
-  padding: 8px;
-  color: #fff;
-}
-
+/*---------------------------*/
 .restaurants {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: center;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: stretch;
   background-color: #efefef;
 }
 .restaurants-title {
   padding-left: 20px;
+  background-color: #efefef;
+  margin-bottom: 0;
+  padding-bottom: 30px;
+  padding-top: 40px;
+}
+@media (min-width: 992px) {
+  .restaurants {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: stretch;
+    flex-wrap: wrap;
+  }
 }
 
-.restaurants-cards {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  align-items: flex-start;
-  align-content: space-evenly;
-}
 .restaurants-cards .label {
-  padding: 20px 0 20px 20px;
   border-radius: 0 0 20px 20px;
   background-color: #fff;
   width: 330px;
   margin-bottom: 20px;
   position: relative;
+  padding: 20px 0 20px 20px;
+}
+@media (min-width: 600px) {
+  .restaurants-cards .label {
+    width: 380px;
+  }
+}
+@media (min-width: 768px) {
+  .restaurants-cards .label {
+    margin-bottom: 40px;
+  }
 }
 .restaurants-cards .label-titre {
   font-weight: 700;
@@ -211,6 +238,11 @@ header #subtitle {
      object-fit: cover;
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
+}
+@media (min-width: 600px) {
+  .restaurants-cards img {
+    width: 400px;
+  }
 }
 
 /*
@@ -230,16 +262,6 @@ header #subtitle {
   font-size: 1.5rem;
   font-weight: 400;
   color: #595959;
-}
-
-.nouveaute {
-  position: relative;
-}
-
-.my-button {
-  position: absolute;
-  right: 0;
-  top: 0;
 }
 
 footer {
@@ -266,6 +288,11 @@ footer .fa-solid.fa-handshake-angle {
   align-items: flex-start;
   align-content: stretch;
 }
+@media (min-width: 600px) {
+  .footer {
+    align-items: center;
+  }
+}
 .footer .texte {
   color: #fff;
   padding: 0 0 20px 20px;
@@ -274,6 +301,11 @@ footer .fa-solid.fa-handshake-angle {
 .footer-title {
   margin-left: 30px;
   padding-top: 20px;
+}
+@media (min-width: 600px) {
+  .footer-title {
+    text-align: center;
+  }
 }
 
 .footer-li {

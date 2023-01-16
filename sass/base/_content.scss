@@ -8,6 +8,8 @@ form{
     align-content: stretch;
     display: flex;
     height: 47px;
+    
+   
    
     input[type=text]{
         border: none;
@@ -41,8 +43,6 @@ form{
     font-size: 2rem;
     @include flex-center;
     margin: 10px 0;
-    
-
 }
 
 header{
@@ -80,115 +80,164 @@ header{
     background: linear-gradient(to bottom, $secondaire, $primaire);
 
 }
-    .button-titre{
-        margin-top: 40px;
-        margin-bottom: 40px;
-        display: flex;
-        padding-left: 20px;
- 
+
+.button-titre{
+    margin-bottom: 20px;
+    padding-left: 20px;
+    margin-top: 50px;
+
+
     }
 
-    .button{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        width: 90%;
-        margin-right: auto;
-        margin-left: auto;
-        height: 70px;
-        border-radius: 20px;
-        font-size: 1rem;
-        font-weight: 600;
-        margin-bottom: 20px;
-        margin-top: 20px;
-        border: none;
+.medaillon{
+    top: 20px;
+    left:-10px;
+    background-color: $primaire;
+    width:30px;
+    height: 30px;
+    border-radius: 50%;
+    vertical-align: middle;
+    line-height: 30px;
+    position: absolute;  
     }
 
-    .fa-solid.fa-mobile-screen-button{
-       @include icon-button;
-    }
-
-    .fa-solid.fa-list-ul{
-        @include icon-button;
-    }
-    .fa-solid.fa-store{
-        @include icon-button;
-        color: $primaire;
-    }
-    .fonctionnement{
-      height: 330px;
-    
-    }
-
-    
-.two{
-    @include number;
-   
-}
-
-.three{
-    @include number;
-    
-}
-.button1, .button2, .button3{
+.button{
     position: relative;
-}
-.one{
-    @include number;
- }
+    margin-right: auto;
+    margin-left: auto;
+    height: 70px;
+    border-radius: 20px;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    border: none;
+    width: 90%;
+    @media (min-width:$smallScreen){
+        width: 70%;
+    }
     
-    .restaurants{
+    
+
+    }
+
+    
+ .new{
+        position: absolute;
+      
+        margin-top: 15px;
+        height: 25px;
+        width: 80px;
+        background-color: $tertiaire;
+        border: none;
+        border-radius: 2px;
+        color: $tertiaire-darker;
+        font-weight: 700;
+    }
+    
+        
+    .relative{
+        position: relative;
+    }
+ 
+
+.fa-solid.fa-mobile-screen-button{
+    @include icon-button;
+}
+
+.fa-solid.fa-list-ul{
+    @include icon-button;
+}
+.fa-solid.fa-store{
+    @include icon-button;
+    color: $primaire;
+}
+.fa-solid.fa-arrow-left{
+    color:$lighterblack;
+}
+
+.fonctionnement{
+        border: 2px solid red($color: #000000);
+        margin-bottom: 25px;
         display: flex;
         flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        align-items: stretch;
+        align-content: stretch;
+      
+      
+
+    }
+/*---------------------------*/
+.restaurants{
+    display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: center;
+	align-content: stretch;
+    &-title{
+        padding-left:20px;
+        background-color:$lightergrey;
+        margin-bottom: 0;
+        padding-bottom: 30px;
+        padding-top: 40px;  
+    }
+    background-color: $lightergrey;
+    @media (min-width:$largeScreen){ 
+        display: flex;
+	    flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        align-content: stretch;
         flex-wrap: wrap;
-        justify-content: center;
-        background-color: $lightergrey;
-        &-title{
-            padding-left:20px
-        }
+    }
        
     }
-    
 
-    .restaurants-cards{
-        
-            display: flex;
-            flex-direction: column;
-            flex-wrap: wrap;
-            justify-content: flex-start;
-            align-items: flex-start;
-            align-content: space-evenly;
-            .label{
-                padding: 20px 0 20px 20px;
-                border-radius: 0 0 20px 20px;
-                background-color:#fff;
-                width: 330px;
-                margin-bottom: 20px;
-                position: relative;
-                &-titre{
-                    font-weight: 700;
-                    font-size: 1.2rem;
-                    line-height: 30px;
-                    &descriptif{
-                        color: $lighterblack;
-                        
-                        
-                    }
-                }
+.restaurants-cards{
+           
+    .label{
+        border-radius: 0 0 20px 20px;
+        background-color:#fff;
+        width: 330px;
+        margin-bottom: 20px;
+        position: relative;
+        @media (min-width: $smallScreen){
+            width: 380px;
+        }
+            @media (min-width:$mediumScreen){
+                margin-bottom: 40px;
             }
+                @media (min-width:$largeScreen){
+                   
+                }
+        &-titre{
+            font-weight: 700;
+            font-size: 1.2rem;
+            line-height: 30px;
+            &descriptif{
+                color: $lighterblack;
+            }
+        }
+        padding: 20px 0 20px 20px;
             
-
     }
 
+}
+
 .restaurants-cards img{
-    
     width: 350px;
     height: 180px;
     object-fit: cover;
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
+    @media (min-width:$smallScreen){
+        width: 400px;
+    }
+     
+    
 }
 /*
 .fa-regular.fa-heart{
@@ -208,22 +257,13 @@ header{
     font-size: 1.5rem;
     font-weight: 400;
     color: $lighterblack;
-   
+    
 }
-.nouveaute{
-    position: relative;
-}
-.my-button{
-    position: absolute;
-    right: 0;
-   top: 0;
-   
-}
-
-
 
 footer{
     background-color: $lighterblack;
+   
+    
     .footer-title{
         color: #fff;
         font-weight: normal;
@@ -247,7 +287,10 @@ footer{
 	justify-content: flex-start;
 	align-items: flex-start;
 	align-content: stretch;
-    
+    @media (min-width:$smallScreen){
+        align-items: center;
+    }
+   
     .texte{
         color: #fff;
         padding:0 0 20px 20px;
@@ -256,6 +299,10 @@ footer{
     &-title{
         margin-left: 30px;
         padding-top: 20px;
+        @media (min-width:$smallScreen){
+            text-align: center;
+          
+        }
     }
 
     
@@ -271,7 +318,7 @@ footer{
 .footer li a{
     display: flex;
     text-decoration: none;
-    
+   
     
 }
 
