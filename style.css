@@ -94,6 +94,11 @@ header #subtitle {
   padding-left: 20px;
   margin-top: 50px;
 }
+@media (min-width: 600px) {
+  .button-titre {
+    text-align: center;
+  }
+}
 
 .medaillon {
   top: 20px;
@@ -182,13 +187,6 @@ header #subtitle {
   align-content: stretch;
   background-color: #efefef;
 }
-.restaurants-title {
-  padding-left: 20px;
-  background-color: #efefef;
-  margin-bottom: 0;
-  padding-bottom: 30px;
-  padding-top: 40px;
-}
 @media (min-width: 992px) {
   .restaurants {
     display: flex;
@@ -209,14 +207,39 @@ header #subtitle {
     flex-direction: column;
   }
 }
+.restaurants-title {
+  padding-left: 20px;
+  background-color: #efefef;
+  margin-bottom: 0;
+  padding-bottom: 30px;
+  padding-top: 40px;
+}
+@media (min-width: 600px) {
+  .restaurants-title {
+    text-align: center;
+  }
+}
+@media (min-width: 992px) {
+  .restaurants-title {
+    text-align: left;
+    padding-left: 50px;
+  }
+}
+@media (min-width: 1440px) {
+  .restaurants-title {
+    text-align: center;
+  }
+}
 
+.restaurants-cards {
+  padding: 20px 0 20px 20px;
+}
 .restaurants-cards .label {
   border-radius: 0 0 20px 20px;
   background-color: #fff;
   width: 330px;
   margin-bottom: 20px;
   position: relative;
-  padding: 20px 0 20px 20px;
 }
 @media (min-width: 600px) {
   .restaurants-cards .label {
@@ -242,9 +265,13 @@ header #subtitle {
   font-weight: 700;
   font-size: 1.2rem;
   line-height: 30px;
+  padding-left: 10px;
 }
-.restaurants-cards .label-titredescriptif {
+.restaurants-cards .label-descriptif {
+  padding-bottom: 10px;
+  padding-left: 10px;
   color: #595959;
+  font-weight: 500;
 }
 
 .restaurants-cards img {

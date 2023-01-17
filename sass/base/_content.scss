@@ -85,6 +85,9 @@ header{
     margin-bottom: 20px;
     padding-left: 20px;
     margin-top: 50px;
+    @media (min-width:$smallScreen){
+        text-align: center;
+    }
 
 
     }
@@ -168,36 +171,45 @@ header{
 	justify-content: flex-start;
 	align-items: center;
 	align-content: stretch;
+    background-color: $lightergrey;
+        @media (min-width:$largeScreen){ 
+            display: flex;
+	        flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+            align-content: stretch;
+            flex-wrap: wrap;
+        }
+        @media (min-width:$xlScreen){
+            padding:  0 20px;  
+        }
+        @media (min-width:$xxlScreen){
+            flex-direction: column;
+        }
+
     &-title{
         padding-left:20px;
         background-color:$lightergrey;
         margin-bottom: 0;
         padding-bottom: 30px;
-        padding-top: 40px;  
+        padding-top: 40px; 
+            @media (min-width:$smallScreen){
+                text-align: center;
+            }
+            @media (min-width:$largeScreen){
+                text-align: left;
+                padding-left: 50px;
+            } 
+            @media (min-width:$xxlScreen){
+                text-align: center;
+            }
     }
-    background-color: $lightergrey;
-    @media (min-width:$largeScreen){ 
-        display: flex;
-	    flex-direction: row;
-        justify-content: space-evenly;
-        align-items: center;
-        align-content: stretch;
-        flex-wrap: wrap;
-    }
-        @media (min-width:$xlScreen){
-            padding:  0 20px;
-            
-        }
-        @media (min-width:$xxlScreen){
-            flex-direction: column;
-
-        }
-       
-       
+    
     }
 
 .restaurants-cards{
-           
+    padding: 20px 0 20px 20px;
+
     .label{
         border-radius: 0 0 20px 20px;
         background-color:#fff;
@@ -218,19 +230,21 @@ header{
                 }
                 @media (min-width:$xxlScreen){
                     width: 900px;
-                    
                 }
-
 
         &-titre{
             font-weight: 700;
             font-size: 1.2rem;
             line-height: 30px;
-            &descriptif{
-                color: $lighterblack;
-            }
+            padding-left: 10px;
         }
-        padding: 20px 0 20px 20px;
+       
+        &-descriptif{
+            padding-bottom: 10px;
+            padding-left: 10px;
+            color: $lighterblack;
+            font-weight: 500;
+        }
             
     }
 
@@ -242,12 +256,12 @@ header{
     object-fit: cover;
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
-    @media (min-width:$xlScreen){
-       height: 210px;
-    }
-    @media (min-width:$xxlScreen){
-        height: 300px;
-    }
+        @media (min-width:$xlScreen){
+        height: 210px;
+        }
+        @media (min-width:$xxlScreen){
+            height: 300px;
+        }
 }
 /*
 .fa-regular.fa-heart{
