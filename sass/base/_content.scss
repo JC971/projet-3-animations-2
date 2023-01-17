@@ -134,9 +134,6 @@ header{
         font-weight: 700;
     }
     
-        
-   
- 
 
 .fa-solid.fa-mobile-screen-button{
     @include icon-button;
@@ -191,6 +188,11 @@ header{
             padding:  0 20px;
             
         }
+        @media (min-width:$xxlScreen){
+            flex-direction: column;
+
+        }
+       
        
     }
 
@@ -214,6 +216,12 @@ header{
                 @media (min-width:$xlScreen){
                     width: 450px;
                 }
+                @media (min-width:$xxlScreen){
+                    width: 900px;
+                    
+                }
+
+
         &-titre{
             font-weight: 700;
             font-size: 1.2rem;
@@ -236,6 +244,9 @@ header{
     border-top-left-radius: 20px;
     @media (min-width:$xlScreen){
        height: 210px;
+    }
+    @media (min-width:$xxlScreen){
+        height: 300px;
     }
 }
 /*
@@ -290,6 +301,11 @@ footer{
     @media (min-width:$smallScreen){
         align-items: center;
     }
+    @media (min-width:$xxlScreen){
+        flex-direction: row;
+        justify-content: center;
+    }
+
    
     .texte{
         color: #fff;
