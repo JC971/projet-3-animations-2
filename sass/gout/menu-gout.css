@@ -16,27 +16,33 @@ h2 {
   font-family: "Roboto", sans-serif;
   font-size: 1.2rem;
   text-transform: uppercase;
-  color: #595959;
   font-weight: 400;
 }
 
 .logo {
   font-family: "Shrikhand", cursive;
   font-size: 2rem;
-  background-color: #efefef;
+}
+
+.container {
+  background-color: #e2e2e2;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  position: absolute;
+  top: 300px;
+  width: 100%;
 }
 
 .top-image img {
-  height: 270px;
+  height: 290px;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  position: relative;
-  z-index: 10;
 }
 
 .gout {
   position: relative;
+  padding: 0 0 0 20px;
 }
 
 .fa-regular.fa-heart {
@@ -45,16 +51,50 @@ h2 {
   right: 20px;
 }
 
-body {
-  background-color: #efefef;
+.menu-entree {
+  border-bottom: 3px solid #99E2D0;
+  display: inline;
+  padding: 0;
+  color: #595959;
 }
 
 .menu {
-  margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  align-content: stretch;
+  margin: 20px 0 10px 0;
 }
-.menu .menu-entree {
-  border-bottom: 3px solid #99E2D0;
-  display: inline;
+
+button {
+  width: 90%;
+  height: 80px;
+  border-radius: 20px;
+  margin: 0 0 15px 0;
+  border: none;
+  text-align: left;
+}
+button .gras {
+  font-weight: 700;
+  font-size: 1.2rem;
+  line-height: 0.5;
+  padding-top: 10px;
+}
+
+.gras-descriptif {
+  position: relative;
+  font-size: 1rem;
+  color: #595959;
+}
+
+.tarif {
+  position: absolute;
+  top: 0px;
+  right: 30px;
+  font-size: 1rem;
+  color: #000;
+  font-weight: 700;
 }
 
 footer {
