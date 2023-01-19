@@ -6,7 +6,6 @@ h2{
     font-family: $fontroboto;
     font-size: 1.2rem;
     text-transform: uppercase;
-   
     font-weight: 400;
 }
 
@@ -17,7 +16,7 @@ h2{
 }
 
 .container{
- background-color: $grey;
+ background-color: $lightergrey;
  border-top-left-radius: 30px;
  border-top-right-radius: 30px;
  position:absolute;
@@ -49,43 +48,29 @@ h2{
     right: 20px;
 }
 
-.menu-entree{
-    border-bottom: 3px solid $tertiaire;
-    display: inline;
-    padding: 0;
-    color: $lighterblack;
-}
-
 .menu{
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
 	align-items: stretch;
 	align-content: stretch;
-    margin: 20px 0 10px 0 ;
-  
-}
+    margin: 30px 0 10px 0 ;
+        button{
+            width: 95%;
+            height: 80px;
+            margin: 0 0 15px 0;
+            border: none;
+            text-align: left;
+            background-color: #fff;
+            border-radius: 20px;
 
-
-
-
-
-button{
-width: 90%;
-height: 80px;
-border-radius: 20px;
-margin: 0 0 15px 0;
-border: none;
-text-align: left;
-
-.gras{
-    font-weight: 700;
-    font-size: 1.2rem;
-    line-height: .5;
-    padding-top: 10px;
-    
-}
-    
+        .gras{
+            font-size: 1.1rem;
+            line-height: .5;
+            padding-top: 10px;
+            font-weight: 700;
+    }
+    }
 }
 
 .gras-descriptif{
@@ -96,9 +81,37 @@ text-align: left;
 .tarif{
     position: absolute;
     top: 0px;
-    right: 30px;
+    right: 20px;
     font-size: 1rem;
     color: #000;
     font-weight: 700;
 }
 
+.menu-plats, .menu-desserts, .menu-entree{
+    border-bottom: 3px solid $tertiaire;
+    display: inline;
+    
+    color: $lighterblack;
+    margin-left: 20px;
+}
+
+.menu-plats{
+    margin-left: 50px;
+}
+
+.commander{
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    width: 40%;
+    height: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 1.2rem;
+    color: #fff;
+    background-color: $secondaire;
+    border: none;
+    border-radius: 20px;
+   
+  
+}
