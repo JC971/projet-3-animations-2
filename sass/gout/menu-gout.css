@@ -48,11 +48,16 @@ h2 {
 
 .container {
   background-color: #efefef;
-  border-top-left-radius: 30px;
   border-top-right-radius: 30px;
+  border-top-left-radius: 30px;
   position: absolute;
   top: 300px;
   width: 100%;
+}
+@media (min-width: 600px) {
+  .container {
+    top: 340px;
+  }
 }
 
 .top-image img {
@@ -61,7 +66,6 @@ h2 {
   -o-object-fit: cover;
      object-fit: cover;
 }
-
 .gout {
   position: relative;
   padding: 0 0 0 20px;

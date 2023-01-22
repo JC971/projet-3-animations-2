@@ -41,13 +41,15 @@ h2{
 }
 
 .container{
- background-color: $lightergrey;
- border-top-left-radius: 30px;
- border-top-right-radius: 30px;
- position:absolute;
- top: 300px;
- width: 100%;
- 
+    background-color: $lightergrey;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+    position:absolute;
+    top: 300px;
+    width: 100%;
+    @media (min-width: 600px){
+        top: 340px;
+    }
  
     
 }
@@ -56,7 +58,9 @@ h2{
    height: 290px;
    width: 100%;
    object-fit: cover;
-  
+   @media (min-width: 600px){
+   
+   }
 }
 
 

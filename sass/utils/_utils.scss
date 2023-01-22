@@ -1,13 +1,13 @@
 $primaire: #9356DC;
 $secondaire: #FF79DA;
 $tertiaire:#99E2D0;
-$tertiaire-darker:darken($tertiaire,30);
+$tertiaire-darker:darken($tertiaire,30%);
 $grey: #e2e2e2;
-$lightergrey: lighten($grey,5);
+$lightergrey: lighten($grey,7%);
 $shadow: (4px -7px 15px 2px #CFCFCF);
-$darkengrey: darken($grey,10);
+$darkengrey: darken($grey,5%);
 $black:#000;
-$lighterblack:lighten($black,35);
+$lighterblack:lighten($black,35%);
 $fontroboto:'Roboto', sans-serif;
 $fontshrikhand:'Shrikhand', cursive;
 
