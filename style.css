@@ -233,7 +233,7 @@ header #subtitle {
 }
 
 .restaurants-cards {
-  padding: 20px 0 20px 20px;
+  padding: 20px 0;
 }
 .restaurants-cards .label {
   border-radius: 0 0 20px 20px;
@@ -294,13 +294,19 @@ header #subtitle {
   }
 }
 
-.restaurants-cards__first {
+.img-container {
   position: relative;
 }
 
-.tag-first {
+.top-right__nouveau {
   position: absolute;
-  top: 0;
+  top: 10px;
+  right: 15px;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 700;
+  background-color: #99E2D0;
+  padding: 3px 5px;
 }
 
 /*

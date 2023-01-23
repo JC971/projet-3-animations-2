@@ -209,7 +209,7 @@ header{
     }
 
 .restaurants-cards{
-    padding: 20px 0 20px 20px;
+    padding: 20px 0 ;
 
     .label{
         border-radius: 0 0 20px 20px;
@@ -266,15 +266,24 @@ header{
         }
 }
 
-.restaurants-cards__first{
+.img-container{
     position: relative;
-    
 }
 
-.tag-first{
-  position: absolute;
-  top: 0;
+.top-right__nouveau{
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 700;
+    background-color: $tertiaire;
+    padding: 3px 5px;
+   
 }
+
+
+
 /*
 .fa-regular.fa-heart{
     float: right;
