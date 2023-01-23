@@ -294,6 +294,15 @@ header #subtitle {
   }
 }
 
+.restaurants-cards__first {
+  position: relative;
+}
+
+.tag-first {
+  position: absolute;
+  top: 0;
+}
+
 /*
 .fa-regular.fa-heart{
     float: right;
@@ -381,7 +390,7 @@ footer .fa-solid.fa-handshake-angle {
 /* spinner-------------------------*/
 .loader {
   background-color: #f4f4f4;
-  opacity: 0.95;
+  opacity: 0.98;
   height: 100vh;
   position: fixed;
   inset: 0;
@@ -399,8 +408,8 @@ footer .fa-solid.fa-handshake-angle {
   align-content: stretch;
   border-radius: 60px;
   border: 2px solid #e2e2e2;
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
 }
 
 @-webkit-keyframes retrait {
@@ -423,8 +432,8 @@ footer .fa-solid.fa-handshake-angle {
 .animation {
   font-size: 2.5rem;
   border: solid #e2e2e2 5px;
-  -webkit-animation: spin 3s;
-          animation: spin 3s;
+  -webkit-animation: spin 1.5s;
+          animation: spin 1.5s;
   height: 90px;
   width: 120px;
   border-radius: 50%;
