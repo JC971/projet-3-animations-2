@@ -390,9 +390,7 @@ footer .fa-solid.fa-handshake-angle {
           animation: retrait 3s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
-  transform-origin: top;
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
+  transform-origin: center;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -400,8 +398,9 @@ footer .fa-solid.fa-handshake-angle {
   align-items: center;
   align-content: stretch;
   border-radius: 60px;
-  -webkit-animation-delay: 2s;
-          animation-delay: 2s;
+  border: 2px solid #e2e2e2;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
 }
 
 @-webkit-keyframes retrait {
@@ -422,15 +421,17 @@ footer .fa-solid.fa-handshake-angle {
   }
 }
 .animation {
-  color: #9356DC;
   font-size: 2.5rem;
   border: solid #e2e2e2 5px;
   -webkit-animation: spin 3s;
           animation: spin 3s;
-  height: 280px;
-  width: 260px;
+  height: 90px;
+  width: 120px;
   border-radius: 50%;
-  border: 5px solid;
+  border-top: 5px solid #9356DC;
+  border-bottom: 5px solid #FF79DA;
+  border-right: 10px solid #FF79DA;
+  border-left: 10px solid #9356DC;
 }
 
 @-webkit-keyframes spin {
