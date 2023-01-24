@@ -102,7 +102,8 @@ header{
     border-radius: 50%;
     vertical-align: middle;
     line-height: 30px;
-    position: absolute;  
+    position: absolute; 
+    color: #fff; 
     }
 
 .button{
@@ -303,7 +304,18 @@ header{
     font-size: 1.5rem;
     font-weight: 400;
     color: $lighterblack;
-    
+    font-size: 1.5rem;
+}
+
+.fa-heart{
+    transition: fill 2s ease-in-out;
+   
+}
+
+.fa-heart:hover{
+    -webkit-text-fill-color: $primaire;
+    -webkit-text-stroke-width: 9px;
+    -webkit-text-stroke-color: $primaire;
 }
 
 
