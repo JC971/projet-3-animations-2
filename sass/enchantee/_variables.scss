@@ -12,7 +12,8 @@ body{
   $lightergrey: lighten($grey,5);
   $shadow: (4px -7px 15px 2px #CFCFCF);
   $darkengrey: darken($grey,10);
-  $black:#000;
+  $black:#45474a;
+  $darkenBlack: darken($black,4%);
   $lighterblack:lighten($black,35);
   $fontroboto:'Roboto', sans-serif;
   $fontshrikhand:'Shrikhand', cursive;

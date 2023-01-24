@@ -321,7 +321,7 @@ header{
 
 
 footer{
-    background-color: $lighterblack;
+    background-color: $darkenBlack;
    
     
     .footer-title{
@@ -361,6 +361,7 @@ footer{
         color: #fff;
         padding:0 0 20px 20px;
         font-size: 1.1rem;
+        
     }
     &-title{
         margin-left: 30px;

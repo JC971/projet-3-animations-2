@@ -32,7 +32,7 @@ form label[for=name] {
   font-weight: 800;
 }
 form input[id=name] {
-  color: #595959;
+  color: #9da0a4;
   font-weight: 700;
   font-size: 1.08rem;
   width: 150px;
@@ -69,7 +69,7 @@ header .title {
   font-weight: 500;
 }
 header #subtitle {
-  color: #595959;
+  color: #9da0a4;
   text-align: center;
   font-size: 1.25rem;
   margin-bottom: 20px;
@@ -147,25 +147,25 @@ header #subtitle {
 
 .fa-solid.fa-mobile-screen-button {
   padding: 0 20px 0 0px;
-  color: #595959;
+  color: #9da0a4;
   font-size: 1.2rem;
 }
 
 .fa-solid.fa-list-ul {
   padding: 0 20px 0 0px;
-  color: #595959;
+  color: #9da0a4;
   font-size: 1.2rem;
 }
 
 .fa-solid.fa-store {
   padding: 0 20px 0 0px;
-  color: #595959;
+  color: #9da0a4;
   font-size: 1.2rem;
   color: #9356DC;
 }
 
 .fa-solid.fa-arrow-left {
-  color: #595959;
+  color: #9da0a4;
 }
 
 .fonctionnement {
@@ -272,7 +272,7 @@ header #subtitle {
 .restaurants-cards .label-descriptif {
   padding-bottom: 10px;
   padding-left: 10px;
-  color: #595959;
+  color: #9da0a4;
   font-weight: 500;
 }
 
@@ -327,7 +327,7 @@ header #subtitle {
   padding: 0 20px;
   font-size: 1.5rem;
   font-weight: 400;
-  color: #595959;
+  color: #9da0a4;
   font-size: 1.5rem;
 }
 
@@ -342,7 +342,7 @@ header #subtitle {
 }
 
 footer {
-  background-color: #595959;
+  background-color: #3b3d3f;
 }
 footer .footer-title {
   color: #fff;
@@ -414,8 +414,8 @@ footer .fa-solid.fa-handshake-angle {
   position: fixed;
   inset: 0;
   z-index: 2;
-  -webkit-animation: retrait 2s;
-          animation: retrait 2s;
+  -webkit-animation: retrait 1.5s;
+          animation: retrait 1.5s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
   transform-origin: center;

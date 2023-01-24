@@ -115,7 +115,7 @@ h2 {
 .gras-descriptif {
   position: relative;
   font-size: 1rem;
-  color: #595959;
+  color: #9da0a4;
 }
 
 .tarif {
@@ -130,7 +130,7 @@ h2 {
 .menu-plats, .menu-desserts, .menu-entree {
   border-bottom: 3px solid #99E2D0;
   display: inline;
-  color: #595959;
+  color: #9da0a4;
   margin-left: 20px;
 }
 
@@ -151,10 +151,12 @@ h2 {
   background-color: #FF79DA;
   border: none;
   border-radius: 20px;
+  background-image: linear-gradient(to top, #9356DC, #FF79DA);
+  box-shadow: -3px 5px 5px #c9c9c9, 3px 5px 5px #c9c9c9;
 }
 
 footer {
-  background-color: #595959;
+  background-color: #3b3d3f;
 }
 footer .footer-title {
   color: #fff;
