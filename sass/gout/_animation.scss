@@ -65,7 +65,7 @@
   .repas__animation {
     position: absolute;
     height: 100px;
-    width: 24%;
+    width: 20%;
     background-color: darkcyan;
     color: white;
     right: 0;
@@ -101,14 +101,17 @@
     -webkit-transform: translateX(-80px);
             transform: translateX(-80px);
   }
+.repas:hover .repas__plat {
+  width:55%
+}
 
   .repas:hover .repas__plat--accompagnement {
-    width: 65%;
+    width: 55%;
   }
 
   .repas:hover .repas__animation--icon {
-    -webkit-transform: translateX(-60px) rotate(360deg);
-            transform: translateX(-60px) rotate(360deg);
+    -webkit-transform: translateX(-30px) rotate(360deg);
+            transform: translateX(-30px) rotate(360deg);
   }
 
  
