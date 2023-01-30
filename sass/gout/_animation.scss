@@ -101,9 +101,12 @@
     -webkit-transform: translateX(-80px);
             transform: translateX(-80px);
   }
+.repas:hover .repas__plat {
+  width:55%
+}
 
   .repas:hover .repas__plat--accompagnement {
-    width: 65%;
+    width: 55%;
   }
 
   .repas:hover .repas__animation--icon {
