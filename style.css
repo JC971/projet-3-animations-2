@@ -87,6 +87,7 @@ header #subtitle {
   border-radius: 20px;
   border: none;
   background: linear-gradient(to bottom, #FF79DA, #9356DC);
+  box-shadow: 2px 7px 7px 2px #CFCFCF;
 }
 
 .button-titre {
@@ -126,6 +127,7 @@ header #subtitle {
   margin-top: 20px;
   border: none;
   width: 90%;
+  box-shadow: 2px 7px 7px 2px #CFCFCF;
 }
 @media (min-width: 600px) {
   .button {

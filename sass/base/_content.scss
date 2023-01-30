@@ -80,6 +80,7 @@ header{
     border-radius: 20px;
     border: none;
     background: linear-gradient(to bottom, $secondaire, $primaire);
+    box-shadow: $shadow;
 
 }
 
@@ -120,6 +121,7 @@ header{
     margin-top: 20px;
     border: none;
     width: 90%;
+    box-shadow: $shadow;
     @media (min-width:$smallScreen){
         width: 70%;
     }
