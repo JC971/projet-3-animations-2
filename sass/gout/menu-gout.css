@@ -11,7 +11,7 @@ h1, h2, h3 {
 .titre {
   position: relative;
   padding: 0 0 0 20px;
-  font-size: 1.8rem;
+  font-size: 1.7rem;
   font-weight: 500;
 }
 
@@ -130,6 +130,11 @@ h3 {
   font-size: 1rem;
   padding-top: 5px;
 }
+@media (min-width: 600px) {
+  .carte .repas__plat {
+    font-size: 1.1rem;
+  }
+}
 .carte .repas__plat--accompagnement {
   padding: 10px 0;
   color: #45474a;
@@ -139,6 +144,11 @@ h3 {
   white-space: nowrap;
   font-size: 1rem;
   padding-top: 5px;
+}
+@media (min-width: 600px) {
+  .carte .repas__plat--accompagnement {
+    font-size: 1.1rem;
+  }
 }
 
 .cout {
@@ -165,22 +175,32 @@ h3 {
   background-image: linear-gradient(to top, #9356DC, #FF79DA);
   box-shadow: -3px 5px 5px #c9c9c9, 3px 5px 5px #c9c9c9;
 }
+.commander:hover {
+  background: linear-gradient(to top, #a16be0, #ff93e1);
+  box-shadow: 2px 1px 10px 1px #4b4646;
+}
 
 footer {
   background-color: #3b3d3f;
+  padding-left: 20px;
+  padding-bottom: 30px;
 }
-footer .footer-title {
-  color: #fff;
-  font-weight: normal;
-  margin-top: 0;
+@media (min-width: 600px) {
+  footer {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 0;
+  }
 }
 footer .fa-solid.fa-utensils {
   color: #fff;
   font-size: 16px;
+  padding: 0 10px 0 0px;
 }
 footer .fa-solid.fa-handshake-angle {
   color: #fff;
   font-size: 16px;
+  padding: 0 10px 0 0px;
 }
 
 .footer {
@@ -204,12 +224,15 @@ footer .fa-solid.fa-handshake-angle {
 }
 .footer .texte {
   color: #fff;
-  padding: 0 0 20px 20px;
+  padding: 0;
   font-size: 1.1rem;
 }
 .footer-title {
   margin-left: 30px;
   padding-top: 20px;
+  color: #fff;
+  font-weight: normal;
+  margin: 0;
 }
 @media (min-width: 600px) {
   .footer-title {
@@ -217,12 +240,23 @@ footer .fa-solid.fa-handshake-angle {
   }
 }
 
+ul {
+  padding: 0;
+  padding: 0 0 20px 0;
+}
+
 .footer-li {
   list-style: none;
+  padding: 0 0 20px 0;
 }
 
 .footer li a {
   display: flex;
+  text-decoration: none;
+}
+
+.restaurants-cards a {
+  color: black;
   text-decoration: none;
 }
 

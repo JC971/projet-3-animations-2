@@ -161,19 +161,25 @@ h3 {
 
 footer {
   background-color: #3b3d3f;
+  padding-left: 20px;
+  padding-bottom: 30px;
 }
-footer .footer-title {
-  color: #fff;
-  font-weight: normal;
-  margin-top: 0;
+@media (min-width: 600px) {
+  footer {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 0;
+  }
 }
 footer .fa-solid.fa-utensils {
   color: #fff;
   font-size: 16px;
+  padding: 0 10px 0 0px;
 }
 footer .fa-solid.fa-handshake-angle {
   color: #fff;
   font-size: 16px;
+  padding: 0 10px 0 0px;
 }
 
 .footer {
@@ -197,12 +203,15 @@ footer .fa-solid.fa-handshake-angle {
 }
 .footer .texte {
   color: #fff;
-  padding: 0 0 20px 20px;
+  padding: 0;
   font-size: 1.1rem;
 }
 .footer-title {
   margin-left: 30px;
   padding-top: 20px;
+  color: #fff;
+  font-weight: normal;
+  margin: 0;
 }
 @media (min-width: 600px) {
   .footer-title {
@@ -210,12 +219,23 @@ footer .fa-solid.fa-handshake-angle {
   }
 }
 
+ul {
+  padding: 0;
+  padding: 0 0 20px 0;
+}
+
 .footer-li {
   list-style: none;
+  padding: 0 0 20px 0;
 }
 
 .footer li a {
   display: flex;
+  text-decoration: none;
+}
+
+.restaurants-cards a {
+  color: black;
   text-decoration: none;
 }
 

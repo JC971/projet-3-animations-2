@@ -125,7 +125,11 @@ h3{
     margin: 0; 
     font-size: 1rem;
     padding-top: 5px;
+    @media (min-width:600px){
+      font-size: 1.1rem;
+    }
 }
+
   .repas__plat--accompagnement{
     padding: 10px 0;
     color: $black;
@@ -135,9 +139,10 @@ h3{
     white-space: nowrap;
     font-size: 1rem;
     padding-top: 5px;
+    @media (min-width: 600px){
+      font-size: 1.1rem;
+    }
     
-
-  
 }
 }
 
@@ -165,6 +170,10 @@ h3{
     border-radius: 20px;
     background-image: linear-gradient(to top, $primaire, $secondaire);
     box-shadow: -3px 5px 5px $darkengrey, 3px 5px 5px $darkengrey;
+    &:hover{
+      background: linear-gradient( to top, $lightPrimaire, $lightSecondaire);
+      box-shadow: $strongShadow;
+    }
     
     
 }
