@@ -394,6 +394,11 @@ footer .fa-solid.fa-handshake-angle {
   padding: 0;
   font-size: 1.1rem;
 }
+@media (min-width: 1440px) {
+  .footer .texte {
+    padding-right: 30px;
+  }
+}
 .footer-title {
   margin-left: 30px;
   padding-top: 20px;

@@ -1,25 +1,36 @@
+body{
+  margin: 0;
+  padding: 0;
+}
 
-  $primaire: #9356DC;
-  $secondaire: #FF79DA;
-  $tertiaire:#99E2D0;
-  $tertiaire-darker:darken($tertiaire,30);
-  $grey: #e2e2e2;
-  $lightergrey: lighten($grey,5);
-  $shadow: (4px -7px 15px 2px #CFCFCF);
-  $darkengrey: darken($grey,10);
-  $black:#45474a;
-  $darkenBlack: darken($black,4%);
-  $lighterblack:lighten($black,35);
-  $fontroboto:'Roboto', sans-serif;
-  $fontshrikhand:'Shrikhand', cursive;
-  
-  $smallScreen: 600px;
-  $mediumScreen: 768px;
-  $largeScreen: 992px;
-  $xlScreen: 1200px;
-  $xxlScreen: 1440px;
-  
-  
-  h1, h2 , h3{
-      font-family: $fontshrikhand;
-  }
+
+$primaire: #9356DC;
+$secondaire: #FF79DA;
+$tertiaire:#99E2D0;
+$lightPrimaire:lighten($primaire, 5%);
+$lightSecondaire:lighten($secondaire, 5%);
+
+$tertiaire-darker:darken($tertiaire,30);
+$grey: #e2e2e2;
+$lightergrey: lighten($grey,5);
+$shadow: (4px -7px 15px 2px #CFCFCF);
+$strongShadow:(2px 1px 10px 1px #4b4646);
+$darkengrey: darken($grey,10);
+$black:#45474a;
+$darkenBlack: darken($black,4%);
+$lighterblack:lighten($black,35);
+$fontroboto:'Roboto', sans-serif;
+$fontshrikhand:'Shrikhand', cursive;
+
+
+$smallScreen: 600px;
+$mediumScreen: 768px;
+$largeScreen: 992px;
+$xlScreen: 1200px;
+$xxlScreen: 1440px;
+
+
+h1, h2 , h3{
+    font-family: $fontshrikhand;
+    font-weight: normal;
+}

@@ -1,115 +1,112 @@
 .fa-heart{
-    transition: fill 2s ease-in-out;
-   
+  transition: fill 2s ease-in-out;
+ 
+}
+
+.fa-heart:hover{
+  -webkit-text-fill-color: $primaire;
+  -webkit-text-stroke-width: 9px;
+  -webkit-text-stroke-color: $primaire;
+}
+
+.decale-entrees{
+    animation: appear 5s;
+    opacity:1;
+    
+    }
+    
+    @keyframes appear {
+        from{
+            opacity:0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+    
+  .decale-plat{
+    animation: plats 5s;
+    animation-delay: 0s;
+    animation-duration: 10s;
+    opacity:1;
   }
-  
-  .fa-heart:hover{
-    -webkit-text-fill-color: $primaire;
-    -webkit-text-stroke-width: 9px;
-    -webkit-text-stroke-color: $primaire;
+
+  @keyframes plats {
+    from{
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
   }
-  
-  
-  
-  .decale-entrees{
-      animation: appear 5s;
-      opacity:1;
-      
-      }
-      
-      @keyframes appear {
-          from{
-              opacity:0;
-          }
-          to {
-              opacity: 1;
-          }
-      }
-      
-  
-    .decale-plat{
-      animation: plats 5s;
-      animation-delay: 0s;
-      animation-duration: 10s;
-      opacity:1;
-      
+
+  .decale-desserts{
+    animation: desserts 5s;
+    animation-delay: 0s;
+    animation-duration: 15s;
+    
+  }
+  @keyframes desserts {
+    from{
+        opacity: 0;
     }
-  
-    @keyframes plats {
-      from{
-          opacity: 0;
-      }
-      to {
-          opacity: 1;
-      }
+    to {
+        opacity: 1;
     }
-  
-  
-    .decale-desserts{
-      animation: desserts 5s;
-      animation-delay: 0s;
-      animation-duration: 15s;
-      
-    }
-    @keyframes desserts {
-      from{
-          opacity: 0;
-      }
-      to {
-          opacity: 1;
-      }
-    }
-  
-  
-  
-    .repas__animation {
-      position: absolute;
-      height: 100px;
-      width: 24%;
-      background-color: darkcyan;
-      color: white;
-      right: 0;
-      top: 0%;
-      text-align: right;
-      line-height: 7;
-      -webkit-transform-origin: right;
-              transform-origin: right;
-      -webkit-transition: all ease-out 400ms;
-      transition: all ease-out 400ms;
-    }
-  
-    .repas__animation--icon {
-      -webkit-transition: all ease-out 400ms;
-      transition: all ease-out 400ms;
-    }
-  
-    .repas__animation--cout {
-      color: $black;
-      background-color: white;
-      text-align: left;
-     
-      -webkit-transition: all ease-out 400ms;
-      transition: all ease-out 400ms;
-      
-    }
-  
-    .repas:hover {
-      cursor: pointer;
-    }
-  
-    .repas:hover:hover .repas__animation--cout {
-      -webkit-transform: translateX(-80px);
-              transform: translateX(-80px);
-    }
-  
-    .repas:hover .repas__plat--accompagnement {
-      width: 65%;
-    }
-  
-    .repas:hover .repas__animation--icon {
-      -webkit-transform: translateX(-60px) rotate(360deg);
-              transform: translateX(-60px) rotate(360deg);
-    }
-  
+  }
+
+  .repas__animation {
+    position: absolute;
+    height: 100px;
+    width: 20%;
+    background-color: darkcyan;
+    color: white;
+    right: 0;
+    top: 0%;
+    text-align: right;
+    line-height: 7;
+    -webkit-transform-origin: right;
+            transform-origin: right;
+    -webkit-transition: all ease-out 400ms;
+    transition: all ease-out 400ms;
+  }
+
+  .repas__animation--icon {
+    -webkit-transition: all ease-out 400ms;
+    transition: all ease-out 400ms;
+  }
+
+  .repas__animation--cout {
+    color: $black;
+    background-color: white;
+    text-align: left;
    
-  
+    -webkit-transition: all ease-out 400ms;
+    transition: all ease-out 400ms;
+    
+  }
+
+  .repas:hover {
+    cursor: pointer;
+  }
+
+  .repas:hover .repas__animation--cout {
+    -webkit-transform: translateX(-80px);
+            transform: translateX(-80px);
+  }
+
+  .repas:hover .repas__plat {
+  width:55%
+}
+
+  .repas:hover .repas__plat--accompagnement {
+    width: 55%;
+  }
+
+  .repas:hover .repas__animation--icon {
+    -webkit-transform: translateX(-30px) rotate(360deg);
+            transform: translateX(-30px) rotate(360deg);
+  }
+
+ 
+
