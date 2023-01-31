@@ -3,13 +3,24 @@
   position:relative;
   padding: 0 0 0 20px;
   font-size: 1.7rem;
-  font-weight: 500; 
+  font-weight: 500;
+  @media (min-width: 600px){
+    margin-top: 20px;
+    padding-left: 40px;
+  
+  }
+  @media (min-width: 768px){
+    text-align: center;
+    margin-top: 30px;
+    padding-left: 0;
+  }
 }
 h2{
     font-family: $fontroboto;
     font-size: 1.2rem;
     text-transform: uppercase;
     font-weight: 400;
+    
 }
 
 h3{
@@ -41,7 +52,10 @@ h3{
     margin: 10px;
     position: relative;
     font-weight: 700;
-
+    @media (min-width:600px){
+      margin: 20px 0;
+    }
+    
 }
 
 .fa-regular.fa-heart{
@@ -53,7 +67,20 @@ h3{
 
 .menu-entree, .menu-plats, .menu-desserts  {
   padding-left: 20px;
+  @media (min-width:600px){
+    padding-left: 40px;
+  }
+  @media (min-width:768px){
+    padding-left: 50px;
+  }
+  @media (min-width:992px){
+    padding-left: 60px;
+  }
+  @media (min-width:1200px){
+    padding-left: 70px;
+  }
 }
+
  .ligne{
  border: solid 2px $tertiaire;
  width: 50px;
@@ -68,7 +95,16 @@ h3{
     top: 300px;
     width: 100%;
     @media (min-width: 600px){
-        top: 340px;
+      top: 370px;
+    }
+    @media (min-width:768){
+      top:410px ;
+    }
+    @media (min-width:992px){
+      top: 440px;
+    }
+    @media (min-width: 1200px){
+      top:450px ;
     }
  
 }
@@ -78,7 +114,13 @@ h3{
    width: 100%;
    object-fit: cover;
    @media (min-width: 600px){
-   
+   height: 310px;
+   object-fit: cover;
+   }
+   @media (min-width:768px){
+    height: 340px;
+    
+
    }
 }
 
@@ -89,9 +131,7 @@ h3{
 	align-items: stretch;
 	align-content: stretch;
     margin: 30px 0 10px 0 ;
-   
 }
-
 
 .carte{
   background-color: rgb(228, 241, 241);
@@ -103,46 +143,51 @@ h3{
   transition: all ease-out 400ms;
   overflow: hidden;
   margin: 0 15px 20px 15px;
-  .repas{
-    width: 100%;
-    display: flex;
-	  flex-direction: column;
-	  flex-wrap: nowrap;
-	  align-items: baseline;
-	  align-content: stretch;
-    background-color: white;
-    height: 100px;
-    -webkit-transform-origin: left;
-            transform-origin: left;
-    padding:15px 0 0 15px;
-    
-  }
-  .repas__plat {
-    text-overflow: ellipsis;
-    overflow: hidden;
-    white-space: nowrap;
-    width: 100%;
-    margin: 0; 
-    font-size: 1rem;
-    padding-top: 5px;
-    @media (min-width:600px){
-      font-size: 1.1rem;
-    }
-}
-
-  .repas__plat--accompagnement{
-    padding: 10px 0;
-    color: $black;
-    font-size: 1.2rem;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    white-space: nowrap;
-    font-size: 1rem;
-    padding-top: 5px;
     @media (min-width: 600px){
-      font-size: 1.1rem;
+    height: 100px;
+    width: 90%;
+  }
+    .repas{
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      align-items: baseline;
+      align-content: stretch;
+      background-color: white;
+      height: 100px;
+      -webkit-transform-origin: left;
+      transform-origin: left;
+      padding:15px 0 0 15px;
+      width: 100%;
+  }
+    .repas__plat {
+      overflow: hidden;
+      white-space: nowrap;
+      width: 100%;
+      margin: 0; 
+      font-size: 1rem;
+      padding-top: 5px;
+      text-overflow: ellipsis;
+        @media (min-width:600px){
+        font-size: 1.2rem;
+        line-height: 30px;
+      }
+}
+    .repas__plat--accompagnement{
+      color: $black;
+      font-size: 1.2rem;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+      font-size: 1rem;
+      padding-top: 5px;
+      @media (min-width: 600px){
+        font-size: 1.1rem;
+        padding: 10px 0;
     }
-    
+      @media (min-width: 768px){
+        font-size: 1.2rem;
+    }
 }
 }
 
@@ -152,8 +197,13 @@ h3{
   color: #000;
   font-weight: 700;
   padding-left: 20px;
+  @media (min-width:$mediumScreen){
+    padding-left: 55px;
+  }
+  @media (min-width:$largeScreen){
+    padding-left: 75px;
+  }
 }
-
 
 .commander{
     margin-right: auto;
@@ -174,7 +224,8 @@ h3{
       background: linear-gradient( to top, $lightPrimaire, $lightSecondaire);
       box-shadow: $strongShadow;
     }
-    
-    
+      @media (min-width:768px){
+        height: 70px;
+    }
 }
 

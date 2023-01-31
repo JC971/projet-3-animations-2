@@ -9,8 +9,6 @@
   -webkit-text-stroke-color: $primaire;
 }
 
-
-
 .decale-entrees{
     animation: appear 5s;
     opacity:1;
@@ -26,13 +24,11 @@
         }
     }
     
-
   .decale-plat{
     animation: plats 5s;
     animation-delay: 0s;
     animation-duration: 10s;
     opacity:1;
-    
   }
 
   @keyframes plats {
@@ -43,7 +39,6 @@
         opacity: 1;
     }
   }
-
 
   .decale-desserts{
     animation: desserts 5s;
@@ -60,12 +55,10 @@
     }
   }
 
-
-
   .repas__animation {
     position: absolute;
     height: 100px;
-    width: 24%;
+    width: 20%;
     background-color: darkcyan;
     color: white;
     right: 0;
@@ -97,16 +90,22 @@
     cursor: pointer;
   }
 
-  .repas:hover:hover .repas__animation--cout {
+  .repas:hover .repas__animation--cout {
     -webkit-transform: translateX(-80px);
             transform: translateX(-80px);
   }
 
+  .repas:hover .repas__plat {
+  width:55%
+}
+
   .repas:hover .repas__plat--accompagnement {
-    width: 65%;
+    width: 55%;
   }
 
   .repas:hover .repas__animation--icon {
-    -webkit-transform: translateX(-60px) rotate(360deg);
-            transform: translateX(-60px) rotate(360deg);
+    -webkit-transform: translateX(-30px) rotate(360deg);
+            transform: translateX(-30px) rotate(360deg);
   }
+
+ 

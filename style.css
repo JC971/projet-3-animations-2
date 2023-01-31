@@ -42,6 +42,11 @@ form input[id=name] {
   background-color: #e2e2e2;
   border-top: solid 4px #d5d5d5;
 }
+@media (min-width: 992px) {
+  .form {
+    height: 55px;
+  }
+}
 
 .logo {
   font-family: "Shrikhand", cursive;
@@ -92,6 +97,18 @@ header #subtitle {
 .bouton-explorer:hover {
   box-shadow: 2px 2px 10px 2px #3d3939;
   background: linear-gradient(to bottom, #ff93e1, #a16be0);
+}
+@media (min-width: 992px) {
+  .bouton-explorer {
+    width: 240px;
+    height: 55px;
+  }
+}
+@media (min-width: 1200px) {
+  .bouton-explorer {
+    width: 250px;
+    height: 65px;
+  }
 }
 
 .button-titre {
@@ -199,16 +216,6 @@ header #subtitle {
   align-content: stretch;
   background-color: #f4f4f4;
 }
-@media (min-width: 992px) {
-  .restaurants {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    align-content: stretch;
-    flex-wrap: wrap;
-  }
-}
 @media (min-width: 1200px) {
   .restaurants {
     padding: 0 20px;
@@ -227,17 +234,6 @@ header #subtitle {
   padding-top: 40px;
 }
 @media (min-width: 600px) {
-  .restaurants-title {
-    text-align: center;
-  }
-}
-@media (min-width: 992px) {
-  .restaurants-title {
-    text-align: left;
-    padding-left: 50px;
-  }
-}
-@media (min-width: 1440px) {
   .restaurants-title {
     text-align: center;
   }

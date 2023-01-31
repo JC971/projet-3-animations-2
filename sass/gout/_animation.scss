@@ -9,8 +9,6 @@
   -webkit-text-stroke-color: $primaire;
 }
 
-
-
 .decale-entrees{
     animation: appear 5s;
     opacity:1;
@@ -26,13 +24,11 @@
         }
     }
     
-
   .decale-plat{
     animation: plats 5s;
     animation-delay: 0s;
     animation-duration: 10s;
     opacity:1;
-    
   }
 
   @keyframes plats {
@@ -43,7 +39,6 @@
         opacity: 1;
     }
   }
-
 
   .decale-desserts{
     animation: desserts 5s;
@@ -59,8 +54,6 @@
         opacity: 1;
     }
   }
-
-
 
   .repas__animation {
     position: absolute;
@@ -101,7 +94,8 @@
     -webkit-transform: translateX(-80px);
             transform: translateX(-80px);
   }
-.repas:hover .repas__plat {
+
+  .repas:hover .repas__plat {
   width:55%
 }
 

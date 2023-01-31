@@ -8,6 +8,7 @@ form{
     align-content: stretch;
     display: flex;
     height: 47px;
+   
     
    
    
@@ -35,6 +36,10 @@ form{
 .form{
     background-color: $grey;
     border-top: solid 4px $darkengrey ;
+    @media (min-width:$largeScreen){
+        height: 55px;
+    }
+    
    
 }
 
@@ -85,7 +90,14 @@ header{
        box-shadow: 2px 2px 10px 2px #3d3939;
        background: linear-gradient(to bottom, $lightSecondaire, $lightPrimaire);
     }
-
+    @media (min-width: $largeScreen){
+        width: 240px;
+        height: 55px;
+    }
+    @media (min-width:$xlScreen){
+        width: 250px;
+        height: 65px;
+    }
 }
 
 .button-titre{
@@ -187,14 +199,7 @@ header{
 	align-items: center;
 	align-content: stretch;
     background-color: $lightergrey;
-        @media (min-width:$largeScreen){ 
-            display: flex;
-	        flex-direction: row;
-            justify-content: center;
-            align-items: center;
-            align-content: stretch;
-            flex-wrap: wrap;
-        }
+     
         @media (min-width:$xlScreen){
             padding:  0 20px;  
         }
@@ -210,14 +215,7 @@ header{
         padding-top: 40px; 
             @media (min-width:$smallScreen){
                 text-align: center;
-            }
-            @media (min-width:$largeScreen){
-                text-align: left;
-                padding-left: 50px;
-            } 
-            @media (min-width:$xxlScreen){
-                text-align: center;
-            }
+            }   
     }
     
     }
@@ -272,8 +270,11 @@ header{
     object-fit: cover;
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
+    
         @media (min-width:$xlScreen){
         height: 210px;
+
+
         }
         @media (min-width:$xxlScreen){
             height: 300px;
