@@ -183,9 +183,9 @@ h3 {
 }
 
 .ligne {
-  border: solid 2px #99E2D0;
-  width: 50px;
+  border-bottom: solid 3px #99E2D0;
   margin-top: 5px;
+  padding-bottom: 5px;
 }
 
 .container {

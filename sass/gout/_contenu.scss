@@ -80,9 +80,9 @@ h3{
 }
 
  .ligne{
- border: solid 2px $tertiaire;
- width: 50px;
+ border-bottom: solid 3px $tertiaire;
  margin-top: 5px;
+ padding-bottom: 5px;
  }
 
 .container{
@@ -118,6 +118,8 @@ h3{
     height: 340px;
    }
 }
+
+
 
 .menu{
 	display: flex;
