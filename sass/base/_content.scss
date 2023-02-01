@@ -225,6 +225,7 @@ header{
         border-radius: 0 0 20px 20px;
         background-color:#fff;
         width: 330px;
+        height: 70px;
         margin-bottom: 20px;
         position: relative;
         @media (min-width: $smallScreen){
@@ -248,13 +249,14 @@ header{
             font-size: 1.2rem;
             line-height: 30px;
             padding-left: 10px;
+            padding-top: 8px;
             
         }
         &-descriptif{
             padding-bottom: 10px;
             padding-left: 10px;
-            color: $lighterblack;
-            font-weight: 500;
+            color: $black;
+            font-weight: 400;
         }
             
     }
@@ -310,10 +312,10 @@ header{
     right: 0;
     transform: translateY(-50%);
     padding: 0 20px ;
-    font-size: 1.5rem;
     font-weight: 400;
     color: $lighterblack;
     font-size: 1.5rem;
+    color: black;
 }
 
 .fa-heart{
