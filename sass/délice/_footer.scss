@@ -27,6 +27,7 @@ footer{
 	justify-content: flex-start;
 	align-items: flex-start;
 	align-content: stretch;
+    padding-left: 0;
     @media (min-width:$smallScreen){
         align-items: center;
     }
