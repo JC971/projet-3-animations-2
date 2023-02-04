@@ -365,82 +365,117 @@ h3 {
   -webkit-text-stroke-color: #9356DC;
 }
 
-.decale-entrees {
+.repas0 {
+  -webkit-animation: appear 1s;
+          animation: appear 1s;
+}
+
+.repas1 {
+  -webkit-animation: appear 1.5s;
+          animation: appear 1.5s;
+}
+
+.repas2 {
+  -webkit-animation: appear 2s;
+          animation: appear 2s;
+}
+
+.repas3 {
+  -webkit-animation: appear 2.5s;
+          animation: appear 2.5s;
+}
+
+.repas4 {
+  -webkit-animation: appear 3s;
+          animation: appear 3s;
+}
+
+.repas5 {
+  -webkit-animation: appear 3.5s;
+          animation: appear 3.5s;
+}
+
+.repas6 {
+  -webkit-animation: appear 4s;
+          animation: appear 4s;
+}
+
+.repas7 {
+  -webkit-animation: appear 4.5s;
+          animation: appear 4.5s;
+}
+
+.repas8 {
   -webkit-animation: appear 5s;
           animation: appear 5s;
-  opacity: 1;
 }
 
 @-webkit-keyframes appear {
   from {
-    opacity: 0;
+    opacity: 1;
   }
   to {
-    opacity: 1;
+    opacity: 0;
   }
 }
 
 @keyframes appear {
   from {
-    opacity: 0;
-  }
-  to {
     opacity: 1;
   }
+  to {
+    opacity: 0;
+  }
 }
-.decale-plat {
-  -webkit-animation: plats 5s;
-          animation: plats 5s;
-  -webkit-animation-delay: 0s;
-          animation-delay: 0s;
-  -webkit-animation-duration: 10s;
-          animation-duration: 10s;
-  opacity: 1;
-}
+/*
 
-@-webkit-keyframes plats {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
+.decale-entrees{
+    animation: appear 5s;
+    opacity:1;
 
-@keyframes plats {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-.decale-desserts {
-  -webkit-animation: desserts 5s;
-          animation: desserts 5s;
-  -webkit-animation-delay: 0s;
-          animation-delay: 0s;
-  -webkit-animation-duration: 15s;
-          animation-duration: 15s;
-}
+    }
 
-@-webkit-keyframes desserts {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
+    @keyframes appear {
+        from{
+            opacity:0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
 
-@keyframes desserts {
-  from {
-    opacity: 0;
+
+
+  .decale-plat{
+    animation: plats 5s;
+    animation-delay: 0s;
+    animation-duration: 10s;
+    opacity:1;
   }
-  to {
-    opacity: 1;
+
+  @keyframes plats {
+    from{
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
   }
-}
+
+  .decale-desserts{
+    animation: desserts 5s;
+    animation-delay: 0s;
+    animation-duration: 15s;
+
+  }
+  @keyframes desserts {
+    from{
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+  }*/
 .repas__animation {
   position: absolute;
   height: 100px;
