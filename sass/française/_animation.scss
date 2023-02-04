@@ -9,6 +9,49 @@
   -webkit-text-stroke-color: $primaire;
 }
 
+.repas0{
+  animation: appear 1s;
+}
+.repas1{
+  animation: appear 1.5s;
+}
+.repas2{
+  animation: appear 2s;
+}
+.repas3{
+  animation: appear 2.5s;
+}
+.repas4{
+  animation: appear 3s;
+}
+.repas5{
+  animation: appear 3.5s;
+}
+.repas6{
+  animation: appear 4s;
+}
+.repas7{
+  animation: appear 4.5s;
+}
+.repas8{
+  animation: appear 5s;
+}
+
+
+
+@keyframes appear{
+  from{
+    opacity: 1;
+
+  }
+  to{
+    opacity: 0;
+  }
+}
+
+
+/*
+
 .decale-entrees{
     animation: appear 5s;
     opacity:1;
@@ -53,7 +96,7 @@
     to {
         opacity: 1;
     }
-  }
+  }*/
 
   .repas__animation {
     position: absolute;
