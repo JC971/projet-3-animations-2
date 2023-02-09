@@ -106,11 +106,14 @@
     right: 0;
     top: 0%;
     text-align: right;
-    line-height: 7;
+    line-height: 5;
     -webkit-transform-origin: right;
             transform-origin: right;
     -webkit-transition: all ease-out 400ms;
     transition: all ease-out 400ms;
+      @media (min-width:600px){
+        line-height: 7;
+      }
   }
 
   .repas__animation--icon {

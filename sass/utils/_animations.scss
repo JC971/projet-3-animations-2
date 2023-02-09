@@ -1,5 +1,51 @@
 /* spinner-------------------------*/
 
+/*
+.loader{
+    background-color: $lightergrey;
+    opacity: 1;
+    height: 100vh;
+    position: fixed;
+    inset: 0;
+    animation-fill-mode: forwards;
+    transform-origin: center;
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: stretch;
+    border-radius: 60px;
+    border: 2px solid $grey;
+   
+}*/
+
+
+
+.animation{
+    font-size: 2.5rem;
+    border: solid $grey 5px;
+    animation: spin 5s;
+    height: 90px;
+    width: 100%;
+    border-radius: 50%;
+    border-top: 5px solid $primaire;
+    border-bottom: 5px solid $secondaire;
+    border-right: 10px solid $secondaire;
+    border-left: 10px solid $primaire;
+    
+    
+}
+
+@keyframes spin {
+  
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+/* spinner-------------------
+
 
 .loader{
     background-color: $lightergrey;
@@ -20,8 +66,6 @@
     border-radius: 60px;
     border: 2px solid $grey;
     animation-delay: 0.1s;
-    
-
 }
 
 @keyframes retrait {
@@ -37,7 +81,7 @@
     
     font-size: 2.5rem;
     border: solid $grey 5px;
-    animation: spin 1.5s;
+    animation: spin 3s;
     height: 90px;
     width: 120px;
     border-radius: 50%;
@@ -46,13 +90,5 @@
     border-right: 10px solid $secondaire;
     border-left: 10px solid $primaire;
     
-    
-    
-}
-
-@keyframes spin {
-    to{
-        transform: rotate(360deg);
-    }
-}
+}------*/
 

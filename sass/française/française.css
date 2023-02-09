@@ -370,57 +370,39 @@ ul {
 }
 
 .repas0 {
-  -webkit-animation: appear 1s;
-          animation: appear 1s;
+  animation: appear 1s;
 }
 
 .repas1 {
-  -webkit-animation: appear 1.5s;
-          animation: appear 1.5s;
+  animation: appear 1.5s;
 }
 
 .repas2 {
-  -webkit-animation: appear 2s;
-          animation: appear 2s;
+  animation: appear 2s;
 }
 
 .repas3 {
-  -webkit-animation: appear 2.5s;
-          animation: appear 2.5s;
+  animation: appear 2.5s;
 }
 
 .repas4 {
-  -webkit-animation: appear 3s;
-          animation: appear 3s;
+  animation: appear 3s;
 }
 
 .repas5 {
-  -webkit-animation: appear 3.5s;
-          animation: appear 3.5s;
+  animation: appear 3.5s;
 }
 
 .repas6 {
-  -webkit-animation: appear 4s;
-          animation: appear 4s;
+  animation: appear 4s;
 }
 
 .repas7 {
-  -webkit-animation: appear 4.5s;
-          animation: appear 4.5s;
+  animation: appear 4.5s;
 }
 
 .repas8 {
-  -webkit-animation: appear 5s;
-          animation: appear 5s;
-}
-
-@-webkit-keyframes appear {
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
-  }
+  animation: appear 5s;
 }
 
 @keyframes appear {
@@ -487,9 +469,14 @@ ul {
   right: 0;
   top: 0%;
   text-align: right;
-  line-height: 7;
+  line-height: 5;
   transform-origin: right;
   transition: all ease-out 400ms;
+}
+@media (min-width: 600px) {
+  .repas__animation {
+    line-height: 7;
+  }
 }
 
 .repas__animation--icon {
