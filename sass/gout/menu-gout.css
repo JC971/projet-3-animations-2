@@ -422,52 +422,6 @@ ul {
     opacity: 0;
   }
 }
-/*
-.decale-entrees{
-    animation: appear 5s;
-    opacity:1;
-
-    }
-
-    @keyframes appear {
-        from{
-            opacity:0;
-        }
-        to {
-            opacity: 1;
-        }
-    }
-
-  .decale-plat{
-    animation: plats 5s;
-    animation-delay: 0s;
-    animation-duration: 10s;
-    opacity:1;
-  }
-
-  @keyframes plats {
-    from{
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-  }
-
-  .decale-desserts{
-    animation: desserts 5s;
-    animation-delay: 0s;
-    animation-duration: 15s;
-
-  }
-  @keyframes desserts {
-    from{
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-  }*/
 .repas__animation {
   position: absolute;
   height: 100px;
